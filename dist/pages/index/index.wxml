@@ -1,0 +1,47 @@
+<view class="container bg-gray">
+  <view class="bg-white number-line">
+    <view class="row">
+      <view class="col">
+        <input placeholder="请输入票券号或扫码" bindinput="quanInput" auto-focus/>
+      </view>
+      <view class="col-80p ft-primary flex">
+        <view class="col-30" bindtap="scanQuan">
+          <image  src="../../image/scanning.png" class="img-icon"></image>
+        </view>
+        <view class="col">
+          <text> | </text>
+          <text class="ml-5" bindtap="searchTickets"> 查询 </text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <block wx:if="{{ tickets.length > 0 }}">
+    <block wx:for="{{tickets}}" wx:key="{{item.id}}">
+       <view class="bg-white number-line">
+         <view class="row">
+          <view class="col-40p">
+            <image  src="../../image/ic_logo.png" style="width:80rpx;height:80rpx;"></image>
+          </view>
+          <view class="col flex" style="flex-direction:column">
+            <view style="padding-left:20rpx; padding-right:20rpx">
+              <view class="row pb-10">
+                <view class="col ft-gray">吊券</view>
+                <view class="col ft-primary text-right" wx:if="{{item.status=='未使用'}}" bindtap="validateQuan" data-index="{{index}}">校验</view>
+                <view class="col ft-primary text-right" wx:else>{{item.status}}</view>
+              </view>
+              <view class="row ft-16 pb-10" style="border-bottom:2rpx dashed #ddd">
+                <view class="col">{{item.price}}元优惠券</view>
+              </view>
+              <view class="row mt-10 ft-gray">
+                <view class="col">
+                  <text> 票券编码: </text>
+                  <text class="ml-10"> {{ item.orderNo }} </text>
+                </view>
+              </view>
+            </view>
+          </view>
+         </view>
+       </view>
+    </block>
+  </block>
+</view>

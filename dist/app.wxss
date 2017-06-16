@@ -1,0 +1,161 @@
+/**app.wxss**/
+.container {
+  font-family: 'Microsoft YaHei';
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0 0; }
+
+image {
+  object-fit: cover;
+  object-position: center; }
+
+.img-icon {
+  width: 40rpx;
+  height: 40rpx; }
+
+.ft-12 {
+  font-size: 24rpx; }
+
+.ft-14 {
+  font-size: 28rpx; }
+
+.ft-16 {
+  font-size: 32rpx; }
+
+.ft-20 {
+  font-size: 40rpx; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0;
+  flex: 1; }
+
+.border-bottom-line {
+  border-bottom: 2rpx solid #ddd; }
+
+.border-bottom-dash-line {
+  border-bottom: 2rpx dashed #ddd; }
+
+.border-bottom-0 {
+  border-bottom: 0rpx !important; }
+
+.flex {
+  display: flex; }
+
+.flex-center {
+  align-items: center; }
+
+.col {
+  flex: 1; }
+
+.col-30 {
+  flex: 0 0 60rpx; }
+
+.col-40p {
+  flex: 0 0 80rpx; }
+
+.col-80p {
+  flex: 0 0 160rpx; }
+
+.col-33 {
+  flex: 0 0 33%; }
+
+.col-40 {
+  flex: 0 0 40%; }
+
+.padding {
+  padding: 20rpx 20rpx; }
+
+.pt-5 {
+  padding-top: 10rpx; }
+
+.pt-10 {
+  padding-top: 20rpx; }
+
+.pb-10 {
+  padding-bottom: 20rpx; }
+
+.mt-0 {
+  margin-top: 0rpx !important; }
+
+.mt-10 {
+  margin-top: 20rpx; }
+
+.mr-5 {
+  margin-right: 10rpx; }
+
+.mr-10 {
+  margin-right: 20rpx; }
+
+.mb-10 {
+  margin-bottom: 20rpx; }
+
+.ml-5 {
+  margin-left: 10rpx; }
+
+.ml-10 {
+  margin-left: 20rpx; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.number-line {
+  padding: 30rpx 30rpx;
+  border-bottom: 1px solid #eee; }
+
+.pull-right {
+  float: right; }
+
+.border-right {
+  border-right: 2rpx solid #ffe57f; }
+
+.border-0 {
+  border: 0 !important; }
+
+.btn-primary {
+  color: #fff;
+  border: 2rpx solid #ffe57f;
+  background-color: #ffe57f; }
+
+.btn-primary-outline {
+  color: #000;
+  border: 2rpx solid #ffe57f; }
+
+.ft-primary {
+  color: #0289fb; }
+
+.ft-red {
+  color: #f44336; }
+
+.ft-green {
+  color: #4caf50; }
+
+.ft-orange {
+  color: #ea9518; }
+
+.ft-gray {
+  color: #aaa; }
+
+.bg-white {
+  background: #fff; }
+
+.bg-gray {
+  background: #f6f6f6; }
+
+.msg-bubble {
+  font-size: 10px;
+  margin-left: 20rpx;
+  padding-right: 10rpx;
+  padding-left: 10rpx;
+  color: #fff;
+  border-radius: 8rpx;
+  background: #e16531; }
